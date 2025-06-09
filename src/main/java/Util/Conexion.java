@@ -15,7 +15,7 @@ public class Conexion {
    
    public static Connection getConexion() throws SQLException {
        try{
-           Class.forName("com.myql.cj.jdbc.Driver");
+           Class.forName("com.mysql.cj.jdbc.Driver");
            conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/webdesarrollojava", "root", "");                   
        }  catch (Exception e){
            System.err.println("Error" + e);
