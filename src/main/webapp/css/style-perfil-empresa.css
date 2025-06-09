@@ -9,109 +9,21 @@ body {
   background-color: #f1f6f9;
   color: #111;
 }
-
-
-.perfil-empresa {
-  padding: 2rem;
-}
-
-
-.acciones {
-  display: flex;
-  gap: 1rem;
-}
-
-.boton-agregar,
-.boton-soporte {
-  padding: 0.8rem 1.2rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.boton-agregar {
-  background-color: #2a9d8f;
-}
-
-.boton-soporte {
-  background-color: #f4a261;
-}
-
-.boton-agregar:hover {
-  background-color: #21867a;
-  transform: translateY(-2px);
-}
-
-.boton-soporte:hover {
-  background-color: #e07b39;
-  transform: translateY(-2px);
-}
-
-.contenedor-info {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.card-info, .card-ofertas {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  flex: 1 1 300px;
-}
-
-.card-info h2, .card-ofertas h2 {
-  margin-bottom: 1rem;
-  color: #003049;
-}
-
-.card-info p {
-  margin-bottom: 0.5rem;
-  line-height: 1.5;
-}
-
-.card-ofertas ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-}
-
-.boton-editar {
-  margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 10px;
-  background-color: #1d3557;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.boton-editar:hover {
-  background-color: #16324d;
-}
-
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-
-  .acciones {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .acciones button {
-    width: 100%;
-  }
-
-  .contenedor-info {
-    flex-direction: column;
-  }
-}
+.gradient-bg {
+            background: linear-gradient(135deg, #ec7063 0%, #ff3333 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .info-item {
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+        .stats-card {
+            background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+        }
