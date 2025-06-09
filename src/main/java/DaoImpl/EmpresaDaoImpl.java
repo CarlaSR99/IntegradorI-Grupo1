@@ -1,6 +1,6 @@
 package DaoImpl;
 
-import Modelo.Empresa;
+import Model.Empresa;
 import Util.Conexion;
 import java.sql.Connection;
 import java.sql.PreparedStatement;

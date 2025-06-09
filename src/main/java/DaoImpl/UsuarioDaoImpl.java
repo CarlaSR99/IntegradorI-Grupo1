@@ -1,6 +1,7 @@
 
 package DaoImpl;
 
+import Model.Usuario;
 import Util.Conexion;
 import java.sql.Connection;
 import java.sql.PreparedStatement;

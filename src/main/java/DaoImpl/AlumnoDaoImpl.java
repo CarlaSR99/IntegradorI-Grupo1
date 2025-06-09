@@ -1,7 +1,7 @@
 
 package DaoImpl;
 
-import Modelo.Alumno;
+import Model.Alumno;
 import Util.Conexion;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -21,9 +21,10 @@ public class AlumnoDaoImpl {
          stmt.setString(6,alumno.getUniversidad());
          stmt.setString(7,alumno.getGenero());
          stmt.setString(8,alumno.getUbicacion());
-         stmt.getString(9,alumno.getTelefono());
-         stmt.getString(10,alumno.getFecha_nacimiento());
-         stmt.getString(11,alumno.getCiclo());
+         stmt.setString(9, alumno.getTelefono());
+         stmt.setString(10, alumno.getFecha_nacimiento());
+         stmt.setString(11, alumno.getCiclo());
+         stmt.executeUpdate();
          return true;
      } catch(Exception e){
          System.out.println("Error al crear el estudiante: " + e.getMessage());
