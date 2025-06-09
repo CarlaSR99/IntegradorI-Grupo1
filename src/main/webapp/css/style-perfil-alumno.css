@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-red: #ff3333;
+    --secondary-blue: #5499c7;
+    --accent-teal: #06b6d4;
+    --success-lightblue: #85c1e9 ;
+    --warning-orange: #ec7063;
+    --light-bg: #f8fafc;
+    --card-bg: #ffffff;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --border-color: #e2e8f0;
+}
+
+.gradient-primary {
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--secondary-blue) 100%);
+}
+
+.gradient-accent {
+    background: linear-gradient(135deg, var(--accent-teal) 0%, var(--primary-red) 100%);
+}
+
+.gradient-success {
+    background: linear-gradient(135deg, var(--success-green) 0%, var(--accent-teal) 100%);
+}
+
+.bg-pattern {
+    background: var(--primary-red);
+    background-image:
+        radial-gradient(circle at 25% 25%, rgba(255,255,255,0.1) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(255,255,255,0.1) 0%, transparent 50%);
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-pattern::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+}
+
+.profile-card {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(59, 130, 246, 0.15);
+    border: none;
+    background: var(--card-bg);
+}
+
+.profile-avatar {
+    width: 130px;
+    height: 130px;
+    border: 6px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.skill-badge {
+    background: linear-gradient(135deg, #ddd6fe, #e0e7ff);
+    color: var(--secondary-blue);
+    border: 2px solid var(--secondary-blue);
+    border-radius: 25px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 4px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(40, 116, 166, 0.3);
+}
+
+.info-item {
+    background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-left: 5px solid var(--primary-red);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.info-item:hover {
+    transform: translateX(8px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.1);
+    border-left-color: var(--secondary-blue);
+}
+
+.progress-custom {
+    height: 10px;
+    border-radius: 10px;
+    background-color: #e2e8f0;
+    overflow: hidden;
+}
+
+.progress-bar-gradient {
+    background: linear-gradient(90deg, var(--primary-red), var(--secondary-blue));
+    border-radius: 10px;
+    transition: width 0.6s ease;
+}
+
+.progress-bar-success {
+    background: linear-gradient(90deg, var(--success-lightblue), var(--accent-teal));
+    border-radius: 10px;
+}
+
+.progress-bar-warning {
+    background: linear-gradient(90deg, var(--warning-orange), #f1948a);
+    border-radius: 10px;
+}
+
+.btn-primary-custom {
+    background: linear-gradient(135deg, var(--primary-red), var(--secondary-blue));
+    border: none;
+    color: white;
+    border-radius: 25px;
+    padding: 12px 28px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.btn-primary-custom:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+    color: white;
+}
+
+.btn-outline-custom {
+    border: 2px solid var(--primary-red);
+    color: var(--primary-blue);
+    border-radius: 25px;
+    padding: 10px 24px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.btn-outline-custom:hover {
+    background: var(--primary-red);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
+}
+
+.stats-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    border: 2px solid var(--border-color);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.stats-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-red), var(--secondary-blue));
+}
+
+.stats-card:hover {
+    border-color: var(--primary-red);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(59, 130, 246, 0.15);
+}
+
+.icon-primary {
+    color: var(--primary-red);
+}
+
+.icon-secondary {
+    color: var(--secondary-blue);
+}
+
+.icon-success {
+    color: var(--success-lightblue);
+}
+
+.icon-warning {
+    color: var(--warning-orange);
+}
+
+.section-title {
+    color: var(--text-primary);
+    font-weight: 700;
+    margin-bottom: 24px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-red), var(--secondary-blue));
+    border-radius: 2px;
+}
+
+.activity-item {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.activity-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.badge-custom {
+    background: linear-gradient(135deg, var(--success-lightblue), var(--accent-teal));
+    color: white;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-weight: 600;
+}
+
+body {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f1f5f9 100%);
+    min-height: 100vh;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}

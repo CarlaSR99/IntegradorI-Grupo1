@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f1f6f9;
+  color: #111;
+}
+.gradient-bg {
+            background: linear-gradient(135deg, #ec7063 0%, #ff3333 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .info-item {
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+        .stats-card {
+            background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+        }

@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    color: #ccc;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+}
+
+.buscaPuesto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.buscaPuesto input[type="text"] {
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 180px;
+}
+
+.buscaPuesto h2 {
+    margin-right: 20px;
+}
+
+.listaTajetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.tarjeta {
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenidoTrajeta {
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.tarjeta .contenidoTrajeta p {
+    line-height: 1.5;
+    color: black;
+    flex-grow: 1;
+}
+
+.tarjeta .contenidoTrajeta h1 {
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.tarjeta .contenidoTrajeta a {
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    align-self: center;
+}
