@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6f0f5;
+}
+
+.crear-cuenta {
+    background-color: #333;
+    color: white;
+}
+
+.ingresar {
+    background-color: #333;
+    color: white;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+    padding: 40px;
+}
+.content p span {
+    color: #cb4335  ;
+}
+
+.texto {
+    max-width: 500px;
+    font-size: 35px;
+}
+
+.formulario {
+    background-color: #e6f0f5;
+    padding: 20px;
+}
+
+.formulario input {
+    display: block;
+    width: 300px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.formulario button {
+    width: 300px;
+    padding: 12px;
+    background-color: #cb4335 ;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #e74c3c;
+}
+
+.imagen {
+    width: 200px;
+    max-width: 400px;
+  }
+  
+  .imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
