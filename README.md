@@ -35,12 +35,12 @@ Características principales
 
 Tecnologías utilizadas
 
-- Lenguaje backend:** Java
-- Framework:** Servlets / JSP (Modelo MVC) - Bootstrap - Bycrypt
-- Base de datos:** MySQL
-- Frontend:** HTML, CSS, JavaScript
-- IDE:** NetBeans
-- Control de versiones:** Git + GitHub
+- Lenguaje backend: Java
+- Framework:Bootstrap - Bycrypt
+- Base de datos: MySQL
+- Frontend: HTML, CSS, JavaScript
+- IDE: NetBeans
+- Control de versiones: Git + GitHub
 
 Instalación y ejecución
 Clona este repositorio: 
