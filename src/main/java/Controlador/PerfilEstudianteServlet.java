@@ -42,7 +42,7 @@ public class PerfilEstudianteServlet extends HttpServlet {
         int usuarioId = (int) sesion.getAttribute("idUsuario");
 
         Alumno alumno = daoAlumno.obtenerPorId(usuarioId);
-
+        System.out.println("Aquíi"+ alumno.getApellido());
 
         request.setAttribute("alumno", alumno);
         request.getRequestDispatcher("/paginas/perfil-alumno.jsp").forward(request, response);

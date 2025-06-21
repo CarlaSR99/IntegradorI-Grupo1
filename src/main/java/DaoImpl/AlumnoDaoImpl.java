@@ -33,17 +33,17 @@ public class AlumnoDaoImpl {
      }        
     }
     
-    public Alumno obtenerPorId(int usuarioId) {
+   public Alumno obtenerPorId(int usuarioId) {
         String sql = "SELECT e.*, u.email FROM estudiante e "
-                +"JOIN usuario u ON e.usuario_id = u.usuario_id"
-                +"WHERE e.usuario_id = ?";
+                + "JOIN usuario u ON e.usuario_id = u.usuario_id "
+                + "WHERE e.usuario_id = ?";
         Alumno alumno = null;
-        try (Connection conn = Conexion.getConexion(); PreparedStatement stmt = conn.prepareStatement(sql)){
-        
+        try (Connection conn = Conexion.getConexion(); PreparedStatement stmt = conn.prepareStatement(sql)) {
+
             stmt.setInt(1, usuarioId);
             ResultSet rs = stmt.executeQuery();
-            
-            if(rs.next()){
+
+            if (rs.next()) {
                 alumno = new Alumno();
                 alumno.setNombre(rs.getString("nombre"));
                 alumno.setApellido(rs.getString("apellido"));
@@ -58,8 +58,8 @@ public class AlumnoDaoImpl {
                 alumno.setUbicacion(rs.getString("ubicacion"));
                 alumno.setUniversidad(rs.getString("universidad"));
             }
-        }   catch (Exception e) {
-            System.out.println("Error al obtener alumno por ID" + e.getMessage());
+        } catch (Exception e) {
+            System.out.println("Error al obtener alumno por ID: " + e.getMessage());
         }
         return alumno;
     }
