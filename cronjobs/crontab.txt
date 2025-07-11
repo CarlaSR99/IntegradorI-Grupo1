@@ -1,1 +1,11 @@
+# M I N   H O U R   D A Y_O F_M O N T H   M O N T H   D A Y_O F_W E E K   C O M M A N D
+# (0-59) (0-23)       (1-31)             (1-12)       (0-6, 0=Sunday)
 
+# --- Backup de la base de datos (Diario a las 02:00 AM) ---
+0 2 * * * /bin/bash "/c/Users/Fabian Abad M/Documents/Proyectos Visual Studio/PROYECTO FINAL INTEGRADOR/Integrador-Grupo1/scripts/backup_db.sh" >> "/c/MisBackups/logs_mantenimiento/backup_db_cron.log" 2>&1
+
+# --- Limpieza de logs (Semanal, cada domingo a las 03:00 AM) ---
+0 3 * * 0 /bin/bash "/c/Users/Fabian Abad M/Documents/Proyectos Visual Studio/PROYECTO FINAL INTEGRADOR/Integrador-Grupo1/scripts/limpiar_logs.sh" >> "/c/MisBackups/logs_mantenimiento/limpiar_logs_cron.log" 2>&1
+
+# --- Verificación de salud (Cada 4 horas) ---
+0 */4 * * * /bin/bash "/c/Users/Fabian Abad M/Documents/Proyectos Visual Studio/PROYECTO FINAL INTEGRADOR/Integrador-Grupo1/scripts/check_health.sh" >> "/c/MisBackups/logs_mantenimiento/check_health_cron.log" 2>&1
